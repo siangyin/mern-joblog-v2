@@ -5,7 +5,7 @@ import {
 	Register,
 	Login,
 	DashboardLayout,
-	// Error,
+	Error,
 	// AddJob,
 	// Stats,
 	// AllJobs,
@@ -18,6 +18,7 @@ const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <HomeLayout />,
+		errorElement: <Error />,
 		children: [
 			{
 				index: true,
